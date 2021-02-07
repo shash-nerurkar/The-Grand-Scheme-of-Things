@@ -1,0 +1,128 @@
+[gd_scene load_steps=18 format=2]
+
+[ext_resource path="res://truth/truth.tscn" type="PackedScene" id=1]
+[ext_resource path="res://room/room.tscn" type="PackedScene" id=2]
+[ext_resource path="res://world/world.gd" type="Script" id=3]
+[ext_resource path="res://player/player.tscn" type="PackedScene" id=4]
+[ext_resource path="res://HUD/HUD.tscn" type="PackedScene" id=5]
+[ext_resource path="res://art/time/eyes3.png" type="Texture" id=6]
+[ext_resource path="res://art/time/eyes2.png" type="Texture" id=7]
+[ext_resource path="res://art/time/eyes1.png" type="Texture" id=8]
+[ext_resource path="res://art/Fall of Arcana (New Era Version) Looped.wav" type="AudioStream" id=9]
+[ext_resource path="res://world/bkg_image.tscn" type="PackedScene" id=10]
+[ext_resource path="res://player/desire.tscn" type="PackedScene" id=11]
+[ext_resource path="res://world/goddess.tscn" type="PackedScene" id=12]
+[ext_resource path="res://world/desire_flower.tscn" type="PackedScene" id=13]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 8 ), ExtResource( 7 ), ExtResource( 6 ) ],
+"loop": false,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 10, 300 )
+
+[sub_resource type="RectangleShape2D" id=4]
+resource_local_to_scene = true
+extents = Vector2( 10, 300 )
+
+[sub_resource type="Environment" id=3]
+background_mode = 4
+glow_enabled = true
+glow_intensity = 1.2
+glow_strength = 2.0
+glow_bicubic_upscale = true
+
+[node name="world" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="bkg_image" parent="." instance=ExtResource( 10 )]
+material = null
+
+[node name="bkg_image2" parent="." instance=ExtResource( 10 )]
+material = null
+margin_right = 1024.0
+margin_bottom = 600.0
+
+[node name="time" type="ColorRect" parent="."]
+visible = false
+margin_top = -1.0
+margin_right = 960.0
+margin_bottom = 598.0
+color = Color( 0.0313726, 1, 0, 0 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="eyes" type="AnimatedSprite" parent="time"]
+visible = false
+position = Vector2( 742.708, 194.404 )
+scale = Vector2( 3, 3 )
+frames = SubResource( 1 )
+frame = 2
+playing = true
+flip_h = true
+
+[node name="Timer" type="Timer" parent="time/eyes"]
+one_shot = true
+autostart = true
+
+[node name="HUD" parent="." instance=ExtResource( 5 )]
+layer = 0
+
+[node name="player" parent="." instance=ExtResource( 4 )]
+position = Vector2( 59.6782, 495.587 )
+scale = Vector2( 1.5, 1.5 )
+
+[node name="truth" parent="." instance=ExtResource( 1 )]
+
+[node name="desire" parent="." instance=ExtResource( 11 )]
+
+[node name="music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 9 )
+
+[node name="Tween" type="Tween" parent="."]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+visible = false
+position = Vector2( 512, 300 )
+current = true
+smoothing_enabled = true
+
+[node name="room" parent="." instance=ExtResource( 2 )]
+
+[node name="hidden_tiles_container" type="Node" parent="."]
+
+[node name="level_trigger" type="Area2D" parent="."]
+position = Vector2( 1014, 300 )
+collision_layer = 16
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="level_trigger"]
+shape = SubResource( 2 )
+
+[node name="game_end_trigger" type="Area2D" parent="."]
+collision_layer = 16
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="game_end_trigger"]
+shape = SubResource( 4 )
+disabled = true
+
+[node name="goddess" parent="." instance=ExtResource( 12 )]
+position = Vector2( 235.195, 397.667 )
+frame = 0
+
+[node name="desire_flower" parent="." instance=ExtResource( 13 )]
+position = Vector2( 155.037, 396.781 )
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource( 3 )
+[connection signal="timeout" from="time/eyes/Timer" to="time/eyes" method="_on_Timer_timeout"]
+[connection signal="restart_room" from="player" to="." method="restart_room"]
+[connection signal="add_hidden_tile" from="truth" to="." method="add_hidden_tile"]
+[connection signal="path_completed" from="truth" to="." method="_on_truth_path_completed"]
+[connection signal="add_hidden_tile" from="desire" to="." method="add_hidden_tile"]
+[connection signal="body_entered" from="level_trigger" to="." method="_on_level_trigger_body_entered"]
+[connection signal="body_entered" from="game_end_trigger" to="." method="_on_game_end_trigger_body_entered"]

@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://art/shader/blur.tres" type="Material" id=1]
+[ext_resource path="res://art/HUD/background/1.png" type="Texture" id=2]
+
+[node name="bkg_image" type="TextureRect"]
+material = ExtResource( 1 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
