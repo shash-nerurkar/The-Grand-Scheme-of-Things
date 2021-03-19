@@ -1,6 +1,6 @@
 # The Grand Scheme of Things
 
-<img src='readme_assets\.gif'>
+<img src='readme_assets\intro.gif'>
 
 # Project Title
 
