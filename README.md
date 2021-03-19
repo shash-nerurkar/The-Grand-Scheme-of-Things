@@ -1,6 +1,6 @@
 # The Grand Scheme of Things
 
-<img src='art\HUD\background\2.png'>
+<img src='readme_assets\intro.gif'>
 
 # Project Title
 
