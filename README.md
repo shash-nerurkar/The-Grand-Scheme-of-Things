@@ -1,6 +1,6 @@
 # The Grand Scheme of Things
 
-<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1200px-Image_created_with_a_mobile_phone.png'>
+<img src='art\HUD\background\2.png'>
 
 # Project Title
 
