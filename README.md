@@ -3,7 +3,7 @@
   <div style="display:flex; flex-direction: column;">
     <h1> The Grand Scheme of Things </h1>
     <a href="https://www.youtube.com/watch?v=BIx0HM_9wcU">
-      <img src="readme_assets/intro.gif" alt="Youtube_trailer" align='center' style="width:90%; height:auto; align-self: center;"/>
+      <img src="readme_assets/intro.gif" alt="Youtube_trailer" width='90%' height='auto' onmouseover="bigImg(this)"/>
     </a>
     <p>
       God has created the ever-flowing river of Time and omnipresent gust of Truth. 
