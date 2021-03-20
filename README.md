@@ -1,8 +1,7 @@
 <body>
 
-  <div style="display:flex; flex-direction: column;">
-    <h1> The Grand Scheme of Things </h1>
-    <img src="readme_assets/intro.gif" alt="Youtube_trailer" width='90%' height='auto' onmouseover="width='100%'"/>
+  <div>
+    <img src="readme_assets/intro.gif" alt="Youtube_trailer" width='90%' height='auto'/>
     <p>
       God has created the ever-flowing river of Time and omnipresent gust of Truth. 
       Torn by Desire, Man scours the world for an answer. 
