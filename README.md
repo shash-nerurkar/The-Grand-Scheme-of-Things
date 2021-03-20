@@ -11,9 +11,9 @@
   </div>
 
 
-  <div class="main_container">
+  <div>
     <h1> Prerequisites </h1>
-    <a class='tabspace' href='https://godotengine.org/download/windows'> Godot game engine ver3.2.1 </a>
+    <a href='https://godotengine.org/download/windows'> Godot game engine ver3.2.1 </a>
   </div>
 
 
