@@ -1,5 +1,16 @@
 # The Grand Scheme of Things
 
+<head>
+  <style>
+    .main_container {
+      display: flex;
+      justify_content: center;
+    }
+  </style>
+</head>
+
+
+<div>
 <img src='readme_assets\intro.gif'>
 
 # Project Title
