@@ -7,7 +7,7 @@
       Torn by Desire, Man scours the world for an answer. 
       What is right, and which is the path of Truth? Only Time will tell.
     </p>
-    <a href='https://www.youtube.com/watch?v=BIx0HM_9wcU'>Trailer</a>
+    <a href='https://www.youtube.com/watch?v=BIx0HM_9wcU'>Watch the trailer!</a>
   </div>
 
 
