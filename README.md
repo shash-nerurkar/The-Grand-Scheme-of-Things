@@ -1,43 +1,5 @@
 <body>
 
-  <style>
-    .main_container {
-      display: flex;
-      flex-direction: column;
-      background-color: darkslategrey;
-      align-items: center;
-      padding: 1%;
-    }
-    * {
-        margin: 0;
-        padding: 0;
-    }
-    .center-fit {
-        max-width: 100%;
-        max-height: 100vh;
-        margin: auto;
-    }
-    .center-stretch {
-      width: 80%;
-      height: 80vh ;
-    }
-    h1 {
-      margin: 1% 0%;
-      text-decoration: underline;
-      align-self: flex-start;
-    }
-    p, a {
-      margin: 1%;
-      font-family: Arial, Helvetica, sans-serif;
-      text-align: center;
-      font-size: large;
-      align-self: flex-start;
-    }
-    .tabspace {
-      padding-left: 2%;
-    }
-  </style>
-
   <div class="main_container">
     <h1> The Grand Scheme of Things </h1>
     <iframe class='center-stretch' 
