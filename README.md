@@ -2,8 +2,9 @@
 
   <div class="main_container">
     <h1> The Grand Scheme of Things </h1>
-    <a href="https://www.youtube.com/watch?v=BIx0HM_9wcU"><img src="readme_assets/intro.gif" 
-    alt="Youtube_trailer" width="240" height="180" border="10" /></a>
+    <a href="https://www.youtube.com/watch?v=BIx0HM_9wcU">
+      <img src="readme_assets/intro.gif" alt="Youtube_trailer" width="240" height="180" border="10" />
+    </a>
     <p>
       God has created the ever-flowing river of Time and omnipresent gust of Truth. 
       Torn by Desire, Man scours the world for an answer. 
