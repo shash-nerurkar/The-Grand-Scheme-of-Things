@@ -1,3 +1,5 @@
+  
+  
   <img src="readme_assets/intro.gif" alt="Youtube_trailer" width='100%' height='auto'/>
   <p>
       God has created the ever-flowing river of Time and omnipresent gust of Truth. 
@@ -5,6 +7,8 @@
       What is right, and which is the path of Truth? Only Time will tell.
   </p>
   <a href='https://www.youtube.com/watch?v=BIx0HM_9wcU'>Trailer</a>
+  
+  
   
   <h1> Gallery </h1>
   <p>
@@ -36,8 +40,32 @@
   </p>
   <img src='readme_assets\story_5.png' alt="story_5" width='70%' height='auto'/>
   
+  <p>
+      Time is ever-flowing. Without it, Man cannot exist. Truth is omnipresent. It manifests one of the many paths that Man has. Man is a slave to his Desire. The path of Desire       may become one with that of the Truth.
+  </p>
+  <img src='readme_assets\story_6.png' alt="story_5" width='70%' height='auto'/>
+  
+  <p>
+      Time is ever-flowing. Without it, Man cannot exist. Truth is omnipresent. It manifests one of the many paths that Man has. Man is a slave to his Desire. The path of Desire       may become one with that of the Truth.
+  </p>
+  <img src='readme_assets\story_7.png' alt="story_5" width='70%' height='auto'/>
+  
+  <p>
+      Time is ever-flowing. Without it, Man cannot exist. Truth is omnipresent. It manifests one of the many paths that Man has. Man is a slave to his Desire. The path of Desire       may become one with that of the Truth.
+  </p>
+  <img src='readme_assets\story_8.png' alt="story_5" width='70%' height='auto'/>
+  
+  <p>
+      Time is ever-flowing. Without it, Man cannot exist. Truth is omnipresent. It manifests one of the many paths that Man has. Man is a slave to his Desire. The path of Desire       may become one with that of the Truth.
+  </p>
+  <img src='readme_assets\story_9.png' alt="story_5" width='70%' height='auto'/>
+  
+  
+  
   <h1> Prerequisites </h1>
   <a href='https://godotengine.org/download/windows'> Godot game engine ver3.2.1 </a>
+  
+  
   
   <h1> Getting Started </h1>
   <p>
@@ -67,22 +95,30 @@
       Enjoy! <a style="display: inline" href='https://docs.godotengine.org/en/stable/index.html'>Operating through Godot</a> is a breeze.
   </p>
   
-   <h1> Deployment </h1>
-   <p>
+  
+  
+  <h1> Deployment </h1>
+  <p>
       
-   </p>
+  </p>
    
-   <h1> Built with </h1>
-   <p>
-      
-   </p>
    
-   <h1> Authors </h1>
-   <p>
-      
-   </p>
    
-   <h1> Acknowledgments </h1>
-   <p>
+  <h1> Built with </h1>
+  <p>
       
-   </p>
+  </p>
+   
+   
+   
+  <h1> Authors </h1>
+  <p>
+     
+  </p>
+   
+   
+   
+  <h1> Acknowledgments </h1>
+  <p>
+      
+  </p>
