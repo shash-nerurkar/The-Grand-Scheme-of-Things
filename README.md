@@ -126,6 +126,7 @@
   <h1> Built with </h1>
   <p>
       Godot Engine ver3.2.1
+      <br/>
       Aseprite ver1.1.6
   </p>
    
@@ -134,6 +135,7 @@
   <h1> Co-authors </h1>
   <p>
       <a href='https://github.com/Rain1213'> Rain1213 </a>
+      <br/>
       <a href=''> Oscar Roll </a>
   </p>
    
