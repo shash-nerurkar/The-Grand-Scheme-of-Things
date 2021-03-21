@@ -94,7 +94,29 @@
   
   <h1> Deployment </h1>
   <p>
-      
+      1. Start up the engine. Make sure to pick the correct project.godot file.
+      2. In the top-left, under the 'Project' section, select subsection 'Export..'. 
+  </p>
+  <img src='readme_assets\deployment_1.png' alt="deployment_1"/>
+
+  <p>
+      3. A window will open. Pick the correct deployment environment (Windows desktop, in this case).
+  </p>
+  <img src='readme_assets\deployment_2.png' alt="deployment_2"/>
+    
+  <p>
+      4. Browse to where you want to deploy the game
+  </p>
+  <img src='readme_assets\deployment_3.png' alt="deployment_3"/>
+    
+  <p>
+      5. Make sure you want to set your desired options here (for example, you may set the deployed application icon here).
+      6. Deploy it.
+  </p>
+  <img src='readme_assets\deployment_4.png' alt="deployment_4"/>
+    
+  <p>
+      Enjoy! <a style="display: inline" href='https://docs.godotengine.org/en/stable/index.html'>Operating through Godot</a> is a breeze.
   </p>
    
    
