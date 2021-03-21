@@ -125,9 +125,9 @@
    
   <h1> Built with </h1>
   <p>
-      Godot Engine ver3.2.1
+      :Godot Engine ver3.2.1:
       <br/>
-      Aseprite ver1.1.6
+      :Aseprite ver1.1.6:
   </p>
    
    
