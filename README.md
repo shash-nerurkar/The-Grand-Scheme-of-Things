@@ -20,44 +20,39 @@
   
   <p>
       Upon Man, God bestowed the flower of Desire. Man gladly accepted, unbeknownst of its shackles.
-      <br/> <br/>
-      Time is ever-flowing. Without it, Man cannot exist. Truth is omnipresent. It manifests one of the many paths that Man has. Man is a slave to his Desire. The path of Desire       may become one with that of the Truth.
   </p>
   <img src='readme_assets\story_2.png' alt="story_2" width='70%' height='auto'/>
   
   <p>
-      Time is ever-flowing. Without it, Man cannot exist. Truth is omnipresent. It manifests one of the many paths that Man has. Man is a slave to his Desire. The path of Desire       may become one with that of the Truth.
+      Truth is omnipresent. It manifests one of the many paths that Man has. 
   </p>
   <img src='readme_assets\story_3.png' alt="story_3" width='70%' height='auto'/>
   
   <p>
-      Time is ever-flowing. Without it, Man cannot exist. Truth is omnipresent. It manifests one of the many paths that Man has. Man is a slave to his Desire. The path of Desire       may become one with that of the Truth.
+      Man is a slave to his Desire.
   </p>
   <img src='readme_assets\story_4.png' alt="story_4" width='70%' height='auto'/>
   
   <p>
-      Time is ever-flowing. Without it, Man cannot exist. Truth is omnipresent. It manifests one of the many paths that Man has. Man is a slave to his Desire. The path of Desire       may become one with that of the Truth.
+    The paths of Truth & Desire may diverge...
   </p>
   <img src='readme_assets\story_5.png' alt="story_5" width='70%' height='auto'/>
   
   <p>
-      Time is ever-flowing. Without it, Man cannot exist. Truth is omnipresent. It manifests one of the many paths that Man has. Man is a slave to his Desire. The path of Desire       may become one with that of the Truth.
+      ..or converge.
   </p>
   <img src='readme_assets\story_6.png' alt="story_5" width='70%' height='auto'/>
   
   <p>
-      Time is ever-flowing. Without it, Man cannot exist. Truth is omnipresent. It manifests one of the many paths that Man has. Man is a slave to his Desire. The path of Desire       may become one with that of the Truth.
+      Time is ever-flowing. Without it, Man cannot exist.
   </p>
   <img src='readme_assets\story_7.png' alt="story_5" width='70%' height='auto'/>
   
   <p>
-      Time is ever-flowing. Without it, Man cannot exist. Truth is omnipresent. It manifests one of the many paths that Man has. Man is a slave to his Desire. The path of Desire       may become one with that of the Truth.
+      At the end of Man's journey, God welcomes him warmly. The pain of choice and the shackles of regret are undone.
   </p>
   <img src='readme_assets\story_8.png' alt="story_5" width='70%' height='auto'/>
-  
-  <p>
-      Time is ever-flowing. Without it, Man cannot exist. Truth is omnipresent. It manifests one of the many paths that Man has. Man is a slave to his Desire. The path of Desire       may become one with that of the Truth.
-  </p>
+  <br/> <br/>
   <img src='readme_assets\story_9.png' alt="story_5" width='70%' height='auto'/>
   
   
