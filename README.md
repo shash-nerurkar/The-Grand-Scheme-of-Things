@@ -136,6 +136,8 @@
       <a href='https://github.com/Rain1213'> Rain1213 </a>
       <br/>
       <a href=''> Oscar Roll </a>
+      <br/>
+      <a href=''> Ishaan Pathak </a>
   </p>
    
    
