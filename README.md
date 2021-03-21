@@ -11,27 +11,27 @@
   
   <h1> Getting Started </h1>
   <p>
-      Simply start up the engine (run the exe file, which in my case is Godot_v3.2.1-stable_win64.exe)
+      1. Start up the engine (run the exe file, which in my case is Godot_v3.2.1-stable_win64.exe)
   </p>
 
   <p>
-      Select the 'Import' option 
+      2. Select the 'Import' option 
   </p>
-  <img class="center-fit" src='readme_assets\getting_started_1.png'>
+  <img class="center-fit" src='readme_assets\getting_started_1.png'/>
     
   <p>
-      Browse to where the project has been downloaded
+      3. Browse to where the project has been downloaded
   </p>
     
   <p>
-      Select the 'project.godot' file, and open it
+      4. Select the 'project.godot' file, and open it
   </p>
-  <img class="center-fit" src='readme_assets\getting_started_2.png'>
+  <img class="center-fit" src='readme_assets\getting_started_2.png'/>
     
   <p>
-      Press the 'Play' button in the top right
+      5. Press the 'Play' button in the top right
   </p>
-  <img class="center-fit" src='readme_assets\getting_started_3.png'>
+  <img class="center-fit" src='readme_assets\getting_started_3.png'/>
     
   <p>
       Enjoy! <a style="display: inline" href='https://docs.godotengine.org/en/stable/index.html'>Operating through Godot</a> is a breeze.
