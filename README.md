@@ -1,7 +1,7 @@
 <body>
 
   <div>
-    <img src="readme_assets/intro.gif" alt="Youtube_trailer" width='90%' height='auto'/>
+    <img src="readme_assets/intro.gif" alt="Youtube_trailer" width='100%' height='auto'/>
     <p>
       God has created the ever-flowing river of Time and omnipresent gust of Truth. 
       Torn by Desire, Man scours the world for an answer. 
