@@ -12,29 +12,29 @@
       <br/> <br/>
       God created Time, so Man could flow in the river of existence. God created Truth, so Man could fight it's ripple. But, God never told Man of their presence. 
   </p>
-  <img src='readme_assets\story_1.png'/>
+  <img src='readme_assets\story_1.png' alt="story_1" width='100%' height='auto'/>
   
   <p>
       Upon Man, God bestowed the flower of Desire. Man gladly accepted, unbeknownst of its shackles.
       <br/> <br/>
       Time is ever-flowing. Without it, Man cannot exist. Truth is omnipresent. It manifests one of the many paths that Man has. Man is a slave to his Desire. The path of Desire       may become one with that of the Truth.
   </p>
-  <img src='readme_assets\story_2.png'/>
+  <img src='readme_assets\story_2.png' alt="story_2" width='100%' height='auto'/>
   
   <p>
       Time is ever-flowing. Without it, Man cannot exist. Truth is omnipresent. It manifests one of the many paths that Man has. Man is a slave to his Desire. The path of Desire       may become one with that of the Truth.
   </p>
-  <img src='readme_assets\story_3.png'/>
+  <img src='readme_assets\story_3.png' alt="story_3" width='100%' height='auto'/>
   
   <p>
       Time is ever-flowing. Without it, Man cannot exist. Truth is omnipresent. It manifests one of the many paths that Man has. Man is a slave to his Desire. The path of Desire       may become one with that of the Truth.
   </p>
-  <img src='readme_assets\story_4.png'/>
+  <img src='readme_assets\story_4.png' alt="story_4" width='100%' height='auto'/>
   
   <p>
       Time is ever-flowing. Without it, Man cannot exist. Truth is omnipresent. It manifests one of the many paths that Man has. Man is a slave to his Desire. The path of Desire       may become one with that of the Truth.
   </p>
-  <img src='readme_assets\story_5.png'/>
+  <img src='readme_assets\story_5.png' alt="story_5" width='100%' height='auto'/>
   
   <h1> Prerequisites </h1>
   <a href='https://godotengine.org/download/windows'> Godot game engine ver3.2.1 </a>
@@ -47,7 +47,7 @@
   <p>
       2. Select the 'Import' option 
   </p>
-  <img src='readme_assets\getting_started_1.png'/>
+  <img src='readme_assets\getting_started_1.png' alt="getting_started_1" width='100%' height='auto'/>
     
   <p>
       3. Browse to where the project has been downloaded
@@ -56,12 +56,12 @@
   <p>
       4. Select the 'project.godot' file, and open it
   </p>
-  <img src='readme_assets\getting_started_2.png'/>
+  <img src='readme_assets\getting_started_2.png' alt="getting_started_2" width='100%' height='auto'/>
     
   <p>
       5. Press the 'Play' button in the top right
   </p>
-  <img src='readme_assets\getting_started_3.png'/>
+  <img src='readme_assets\getting_started_3.png' alt="getting_started_3" width='100%' height='auto'/>
     
   <p>
       Enjoy! <a style="display: inline" href='https://docs.godotengine.org/en/stable/index.html'>Operating through Godot</a> is a breeze.
