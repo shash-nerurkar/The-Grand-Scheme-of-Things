@@ -95,6 +95,7 @@
   <h1> Deployment </h1>
   <p>
       1. Start up the engine. Make sure to pick the correct project.godot file.
+      <br/>
       2. In the top-left, under the 'Project' section, select subsection 'Export..'. 
   </p>
   <img src='readme_assets\deployment_1.png' alt="deployment_1"/>
@@ -111,6 +112,7 @@
     
   <p>
       5. Make sure you want to set your desired options here (for example, you may set the deployed application icon here).
+      <br/>
       6. Deploy it.
   </p>
   <img src='readme_assets\deployment_4.png' alt="deployment_4"/>
@@ -123,19 +125,21 @@
    
   <h1> Built with </h1>
   <p>
-      
+      Godot Engine ver3.2.1
+      Aseprite ver1.1.6
   </p>
    
    
    
-  <h1> Authors </h1>
+  <h1> Co-authors </h1>
   <p>
-     
+      <a href='https://github.com/Rain1213'> Rain1213 </a>
+      <a href=''> Oscar Roll </a>
   </p>
    
    
    
   <h1> Acknowledgments </h1>
   <p>
-      
+      This game was inspired entirely on Talib Kweli's verse on <a href='https://youtu.be/-DY94XFbocU?t=137'>The Truth by Pharoahe Monch</a>.
   </p>
