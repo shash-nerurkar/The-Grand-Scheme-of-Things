@@ -1,7 +1,4 @@
-  <p>
-      This game was made for <a href='https://hackbu-2021.devpost.com/'>HackBU, a one-day online hackathon</a>.
-  </p>  
-  
+
   <img src="readme_assets/intro.gif" alt="Youtube_trailer" width='100%' height='auto'/>
   <p>
       God has created the ever-flowing river of Time and omnipresent gust of Truth. 
