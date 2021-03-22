@@ -135,14 +135,14 @@
   <p>
       <a href='https://github.com/Rain1213'> Rain1213 </a>
       <br/>
-      <a href=''> Oscar Roll </a>
+      <a href=https://github.com/edgeemperor''> edgeemperor </a>
       <br/>
-      <a href=''> Ishaan Pathak </a>
+      <a href='https://github.com/d35r0n'> Ishaan Pathak </a>
   </p>
    
    
    
   <h1> Acknowledgments </h1>
   <p>
-      This game was inspired entirely on Talib Kweli's verse on <a href='https://youtu.be/-DY94XFbocU?t=137'>The Truth by Pharoahe Monch</a>.
+      This game was inspired entirely by Talib Kweli's verse on <a href='https://youtu.be/-DY94XFbocU?t=137'>The Truth by Pharoahe Monch</a>.
   </p>
