@@ -119,11 +119,14 @@
    
    
   <h1> Built with </h1>
-  <p>
-      Godot Engine ver3.2.1
-      <br/>
+  <ul>
+      <li>
+        Godot Engine ver3.2.1
+      </li>
+      <li>
       Aseprite ver1.1.6
-  </p>
+      </li>
+  </ul>
    
    
    
