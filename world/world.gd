@@ -17,6 +17,9 @@ onready var game_end_trigger = $game_end_trigger;
 onready var desire_flower = $desire_flower;
 onready var level_trigger_coll = $level_trigger/CollisionShape2D;
 onready var time = $time;
+onready var tween = $Tween;
+onready var music = $music;
+
 
 var plat_pos = [];
 var desire_pos = [];
@@ -26,46 +29,43 @@ var to_move := true;
 func _ready():
 	randomize();
 	player.set_physics_process(false);
+	HUD.cutscene.texture = load('res://art/cutscene/Scene1.png');
 	HUD.fade_in();
-	$HUD/cutscene.texture = load('res://art/cutscene/Scene1.png');
 	yield(get_tree().create_timer(5), "timeout");
 	HUD.fade_out();
 	yield(get_tree().create_timer(1), "timeout");
+	HUD.cutscene.texture = load('res://art/cutscene/Scene2.png');
 	HUD.fade_in();
-	$HUD/cutscene.texture = load('res://art/cutscene/Scene2.png');
-	yield(get_tree().create_timer(1), "timeout");
 	yield(get_tree().create_timer(5), "timeout");
 	HUD.fade_out();
 	yield(get_tree().create_timer(1), "timeout");
-	$HUD/cutscene.hide();
+	HUD.cutscene.hide();
 	HUD.fade_in();
 	yield(get_tree().create_timer(1), "timeout");
 	start_cutscene();
 	yield(self, 'start_game');
-	$music.playing = true;
+	music.playing = true;
 	release_truth();
 
 func start_cutscene():
 	yield(get_tree().create_timer(1), 'timeout');
 	desire_flower.play('default');
-	tween.interpolate_property(desire_flower, 'position', Vector2(155, 396.7), Vector2(82.4, 493.6), 3, Tween.TRANS_LINEAR, Tween.EASE_IN);
+	tween.interpolate_property(desire_flower, 'position', Vector2(155, 396.7), Vector2(82.4, 493.6), 2, Tween.TRANS_LINEAR, Tween.EASE_IN);
 	tween.start();
 	yield(tween, 'tween_all_completed');
 	tween.interpolate_property(desire_flower, 'modulate', Color(1, 1, 1, 1), Color(255, 255, 255, 1), 2, Tween.TRANS_LINEAR, Tween.EASE_IN);
-	tween.start();
-	yield(tween, 'tween_all_completed');
-	tween.interpolate_property(desire_flower, 'modulate', Color(255, 255, 255, 1), Color(1, 1, 1, 0), 2, Tween.TRANS_LINEAR, Tween.EASE_IN);
 	tween.interpolate_property(player, 'modulate', Color(1, 1, 1, 1), Color(255, 1, 1, 1), 2, Tween.TRANS_LINEAR, Tween.EASE_IN);
 	tween.start();
 	yield(tween, 'tween_all_completed');
+	tween.interpolate_property(desire_flower, 'modulate', Color(255, 255, 255, 1), Color(1, 1, 1, 0), 2, Tween.TRANS_LINEAR, Tween.EASE_IN);
 	tween.interpolate_property(player, 'modulate', Color(255, 1, 1, 1), Color(1, 1, 1, 1), 2, Tween.TRANS_LINEAR, Tween.EASE_IN);
 	tween.start();
 	yield(tween, 'tween_all_completed');
 	tween.interpolate_property(goddess, 'scale', goddess.scale, Vector2(0.0001, 0.0001), 1, Tween.TRANS_LINEAR, Tween.EASE_IN);
 	tween.start();
 	yield(tween, 'tween_all_completed');
-	goddess.get_node("particles").room_init();
-	yield(goddess.get_node("particles"), 'start_cutscene_ended');
+	goddess.room_init();
+	yield(goddess, 'start_cutscene_ended');
 	tween.interpolate_property(HUD.exp_bar_container, 'modulate', HUD.exp_bar_container.modulate, Color(1, 0.56, 0, 1), 1, Tween.TRANS_LINEAR, Tween.EASE_IN);
 	tween.interpolate_property(HUD.pause_button, 'modulate', HUD.pause_button.modulate, Color(1, 0.56, 0, 1), 1, Tween.TRANS_LINEAR, Tween.EASE_IN);
 	tween.start();
@@ -114,10 +114,9 @@ func end_cutscene():
 	yield(tween, 'tween_all_completed');
 	HUD.fade_out();
 	yield(get_tree().create_timer(1), "timeout");
-	$HUD/cutscene.show();
-	$HUD/cutscene.texture = load('res://art/cutscene/Scene3_' + String(2 if player.experience == 100 else 1) + '.png');
+	HUD.cutscene.show();
+	HUD.cutscene.texture = load('res://art/cutscene/Scene3_' + String(2 if player.experience == 100 else 1) + '.png');
 	HUD.fade_in();
-	yield(get_tree().create_timer(1), "timeout");
 	yield(get_tree().create_timer(5), "timeout");
 	HUD.fade_out();
 	yield(get_tree().create_timer(1), "timeout");
@@ -125,15 +124,12 @@ func end_cutscene():
 	yield(get_tree().create_timer(1), "timeout");
 	HUD.get_node("endgame_panel").show();
 
-onready var tween = $Tween;
-
 func release_truth():
 	room.next_level();
 	truth.room_init(Vector2(current_pos_x, randi() % 600), plat_pos);
-	HUD.screen_stat.show();
-	tween.interpolate_property(HUD.screen_stat.get_material(), "shader_param/saturation", 1, 0.3, 1, Tween.TRANS_LINEAR, Tween.EASE_OUT)
-	tween.interpolate_property(Engine, 'time_scale', 1, 0.5, 1, Tween.TRANS_CUBIC, Tween.EASE_IN);
-	tween.interpolate_property(camera, 'zoom', Vector2(1, 1), Vector2(0.9, 0.9), 0.25, Tween.TRANS_CUBIC, Tween.EASE_IN_OUT);
+	tween.interpolate_property(HUD.screen_stat.get_material(), "shader_param/contrast", 2, 3, 2, Tween.TRANS_LINEAR, Tween.EASE_OUT)
+	tween.interpolate_property(Engine, 'time_scale', 1, 0.5, 2, Tween.TRANS_CUBIC, Tween.EASE_IN);
+	tween.interpolate_property(camera, 'zoom', Vector2(1, 1), Vector2(0.9, 0.9), 2, Tween.TRANS_CUBIC, Tween.EASE_IN_OUT);
 	tween.start();
 
 func release_desire():
@@ -144,12 +140,11 @@ func update_exp(amt):
 	HUD.update_exp_bar(true if sign(amt) == 1 else false, player.experience);
 
 func _on_truth_path_completed():
-	tween.interpolate_property(HUD.screen_stat.get_material(), "shader_param/saturation", 0.3, 1, 1, Tween.TRANS_LINEAR, Tween.EASE_OUT)
-	tween.interpolate_property(Engine, 'time_scale', 0.5, 1, 1, Tween.TRANS_CUBIC, Tween.EASE_IN);
-	tween.interpolate_property(camera, 'zoom', Vector2(0.9, 0.9), Vector2(1, 1), 0.5, Tween.TRANS_CUBIC, Tween.EASE_IN_OUT);
+	tween.interpolate_property(HUD.screen_stat.get_material(), "shader_param/contrast", 3, 2, 2, Tween.TRANS_LINEAR, Tween.EASE_OUT)
+	tween.interpolate_property(Engine, 'time_scale', 0.5, 1, 2, Tween.TRANS_CUBIC, Tween.EASE_IN);
+	tween.interpolate_property(camera, 'zoom', Vector2(0.9, 0.9), Vector2(1, 1), 2, Tween.TRANS_CUBIC, Tween.EASE_IN_OUT);
 	tween.start();
 	yield(tween, "tween_all_completed");
-	HUD.screen_stat.hide();
 	release_desire();
 
 func level_completed():
@@ -158,7 +153,7 @@ func level_completed():
 	if player.experience > 70 or player.experience < -70:
 		update_exp(100*sign(player.experience) - player.experience);
 	else:
-		update_exp(80);#randi()%100 - 50);
+		update_exp(randi()%60 - 30);
 	if abs(player.experience) == 100:
 		room.next_room(null);
 	elif player.experience >= 70:

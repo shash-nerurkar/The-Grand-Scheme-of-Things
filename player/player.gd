@@ -17,6 +17,7 @@ var emotion;
 var experience := 0;
 var max_jumps := 0;
 
+# warning-ignore:unused_argument
 func init(pos):
 	show();
 	collision.set_deferred('disabled', false);

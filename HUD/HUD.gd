@@ -4,6 +4,7 @@ onready var exp_bar_container = $HBoxContainer;
 onready var health_tween = $HBoxContainer/Tween;
 onready var neg_exp_bar = $HBoxContainer/neg_experience;
 onready var pos_exp_bar = $HBoxContainer/pos_experience;
+onready var cutscene = $CanvasLayer2/cutscene;
 
 var current_exp_type := true;
 var change_bar;
@@ -31,7 +32,7 @@ func _on_Tween_tween_completed(object, key):
 
 onready var pause_panel = $CanvasLayer/MarginContainer;
 onready var screen_stat = $CanvasLayer/screen_stat;
-onready var pause_button = $pause_button;
+onready var pause_button = $CanvasLayer2/pause_button;
 
 func _on_pause_button_pressed():
 	get_tree().paused = true;
@@ -45,8 +46,8 @@ func _on_resume_button_pressed():
 	pause_panel.hide();
 	screen_stat.hide();
 
-onready var transition = $transition;
-onready var trans_tween = $transition/Tween;
+onready var transition = $CanvasLayer3/transition;
+onready var trans_tween = $CanvasLayer3/transition/Tween;
 
 func fade_out():
 	transition.show();

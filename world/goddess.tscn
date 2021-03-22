@@ -15,21 +15,21 @@ animations = [ {
 "speed": 2.0
 } ]
 
-[sub_resource type="Gradient" id=7]
+[sub_resource type="Gradient" id=2]
 resource_local_to_scene = true
 offsets = PoolRealArray( 0, 0.414815, 0.718518, 1 )
 colors = PoolColorArray( 1, 0.708984, 0, 1, 1, 0.732422, 0, 0.584314, 1, 0.97054, 0.112737, 0.281062, 1, 0, 0.785156, 0 )
 
-[sub_resource type="GradientTexture" id=8]
-gradient = SubResource( 7 )
+[sub_resource type="GradientTexture" id=3]
+gradient = SubResource( 2 )
 
-[sub_resource type="Curve" id=3]
+[sub_resource type="Curve" id=4]
 _data = [ Vector2( 0, 1 ), 0.0, 0.03683, 0, 0, Vector2( 0.974684, 0 ), -1.38649, 0.0, 0, 0 ]
 
-[sub_resource type="CurveTexture" id=4]
-curve = SubResource( 3 )
+[sub_resource type="CurveTexture" id=5]
+curve = SubResource( 4 )
 
-[sub_resource type="ParticlesMaterial" id=5]
+[sub_resource type="ParticlesMaterial" id=6]
 emission_shape = 1
 emission_sphere_radius = 15.0
 flag_disable_z = true
@@ -39,24 +39,23 @@ orbit_velocity = 0.0
 orbit_velocity_random = 0.0
 radial_accel = 60.0
 damping = 19.54
-scale_curve = SubResource( 4 )
-color_ramp = SubResource( 8 )
+scale_curve = SubResource( 5 )
+color_ramp = SubResource( 3 )
 
 [node name="goddess" type="AnimatedSprite"]
+position = Vector2( 275.66, 135.257 )
 scale = Vector2( 3, 3 )
 frames = SubResource( 1 )
 frame = 1
 playing = true
+script = ExtResource( 6 )
 
 [node name="particles" type="Particles2D" parent="."]
-scale = Vector2( 1, 1 )
 emitting = false
 amount = 300
 randomness = 1.0
-visibility_rect = Rect2( -200, -200, 400, 400 )
 local_coords = false
-process_material = SubResource( 5 )
+process_material = SubResource( 6 )
 texture = ExtResource( 5 )
-script = ExtResource( 6 )
 
 [node name="Tween" type="Tween" parent="particles"]

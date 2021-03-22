@@ -7,6 +7,9 @@ var current_pos := Vector2();
 var padding_y := 40;
 var lower_right = world_to_map(Vector2(1024, 610));
 
+func _ready():
+	randomize();
+
 func next_room(type):
 	current_pos.x += lower_right.x;
 	var room_num = choose_room(type);
