@@ -115,10 +115,6 @@
       6. Deploy it.
   </p>
   <img src='readme_assets\deployment_4.png' alt="deployment_4"/>
-    
-  <p>
-      Enjoy! <a style="display: inline" href='https://docs.godotengine.org/en/stable/index.html'>Operating through Godot</a> is a breeze.
-  </p>
    
    
    
